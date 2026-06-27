@@ -12,10 +12,10 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body {
-            background-color: #f0f3f6;
+            background-color: #f4f6f9;
             color: #333;
             line-height: 1.7;
-            padding: 50px 20px;
+            padding: 40px 20px;
         }
         .container {
             max-width: 950px;
@@ -23,183 +23,133 @@
             background: #ffffff;
             padding: 50px;
             border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.06);
         }
         header {
-            border-bottom: 3px solid #e1e8ed;
-            padding-bottom: 40px;
-            margin-bottom: 40px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 30px;
+            margin-bottom: 35px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            gap: 25px;
+            gap: 20px;
         }
         .profile-area {
             display: flex;
             align-items: center;
-            gap: 30px;
+            gap: 25px;
         }
         .profile-img {
-            width: 140px;
-            height: 140px;
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
             object-fit: cover;
             border: 4px solid #3498db;
-            box-shadow: 0 4px 10px rgba(52, 152, 219, 0.2);
         }
         .header-text h1 {
-            font-size: 2.8rem;
+            font-size: 2.6rem;
             color: #2c3e50;
             text-transform: uppercase;
-            margin-bottom: 8px;
-            letter-spacing: 1.5px;
+            margin-bottom: 5px;
             font-weight: 800;
         }
         .header-text .subtitle {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             color: #3498db;
-            font-weight: 700;
-            letter-spacing: 0.5px;
+            font-weight: 600;
         }
         .contact-info {
             text-align: right;
-            font-size: 1rem;
+            font-size: 0.95rem;
             color: #555;
-            background-color: #fbfcfd;
-            padding: 15px;
-            border-radius: 8px;
-            border: 1px solid #e1e8ed;
         }
-        .contact-info p {
-            margin-bottom: 8px;
-        }
-        .contact-info a {
-            color: #3498db;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        section {
-            margin-bottom: 45px;
-        }
+        .contact-info p { margin-bottom: 6px; }
+        .contact-info a { color: #3498db; text-decoration: none; font-weight: 600; }
+        
+        section { margin-bottom: 40px; }
         h2 {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             color: #2c3e50;
             text-transform: uppercase;
             border-left: 5px solid #3498db;
             padding-left: 15px;
-            margin-bottom: 25px;
-            letter-spacing: 1px;
+            margin-bottom: 20px;
             font-weight: 700;
         }
         .item {
-            margin-bottom: 30px;
-            border-bottom: 1px solid #f0f3f6;
-            padding-bottom: 20px;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #edf2f7;
         }
-        .item:last-child {
-            border-bottom: none;
-        }
+        .item:last-child { border-bottom: none; }
         .item-header {
             display: flex;
             justify-content: space-between;
             font-weight: bold;
             color: #2c3e50;
-            margin-bottom: 10px;
-            flex-wrap: wrap;
-            font-size: 1.15rem;
-        }
-        .company {
-            color: #3498db;
-            font-weight: 700;
-        }
-        .date {
-            color: #7f8c8d;
-            font-weight: normal;
-            font-size: 0.95rem;
-        }
-        ul {
-            padding-left: 25px;
-            color: #555;
-        }
-        ul li {
             margin-bottom: 8px;
-            text-align: justify;
+            flex-wrap: wrap;
+            font-size: 1.1rem;
         }
+        .company { color: #3498db; }
+        .date { color: #7f8c8d; font-weight: normal; font-size: 0.9rem; }
+        
+        ul { padding-left: 20px; color: #4a5568; }
+        ul li { margin-bottom: 6px; text-align: justify; }
+        
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
         }
         .skills-box {
-            background-color: #fbfcfd;
+            background-color: #f8fafc;
             padding: 20px;
             border-radius: 8px;
-            border: 1px solid #e1e8ed;
+            border: 1px solid #e2e8f0;
         }
         .skills-box h3 {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             color: #2c3e50;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             border-bottom: 2px solid #3498db;
-            padding-bottom: 8px;
-            text-transform: uppercase;
+            padding-bottom: 6px;
         }
-        .skills-box li {
-            font-size: 1rem;
-            color: #666;
-            list-style-type: disc;
-            margin-left: 15px;
-            margin-bottom: 7px;
-        }
+        .skills-box p { font-size: 0.95rem; color: #4a5568; margin-bottom: 6px; }
+        
         .cert-list {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 15px;
-            list-style-type: none;
-            padding-left: 0;
+            gap: 12px;
+            list-style: none;
         }
         .cert-list li {
-            background-color: #fbfcfd;
-            padding: 15px;
+            background: #f8fafc;
+            padding: 14px 20px;
             border-radius: 8px;
-            border: 1px solid #e1e8ed;
+            border: 1px solid #e2e8f0;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-size: 1.05rem;
-            transition: all 0.2s ease;
-        }
-        .cert-list li:hover {
-            border-color: #3498db;
-            transform: translateY(-2px);
-        }
-        .cert-name {
-            color: #2c3e50;
-            font-weight: 600;
         }
         .cert-link {
             background-color: #3498db;
-            color: #ffffff;
+            color: white;
             text-decoration: none;
+            padding: 6px 14px;
+            border-radius: 4px;
+            font-size: 0.85rem;
             font-weight: 600;
-            padding: 8px 18px;
-            border-radius: 6px;
-            font-size: 0.9rem;
         }
-        .cert-link:hover {
-            background-color: #2980b9;
-        }
+        .cert-link:hover { background-color: #2980b9; }
+
         @media (max-width: 768px) {
-            body { padding: 15px; }
-            .container { padding: 25px; }
-            header { flex-direction: column; align-items: flex-start; gap: 20px; }
-            .profile-area { flex-direction: column; align-items: flex-start; gap: 15px; }
-            .profile-img { width: 110px; height: 110px; }
-            .contact-info { text-align: left; width: 100%; }
+            header { flex-direction: column; align-items: flex-start; }
+            .profile-area { flex-direction: column; align-items: flex-start; }
+            .contact-info { text-align: left; }
             .item-header { flex-direction: column; }
             .cert-list li { flex-direction: column; align-items: flex-start; gap: 10px; }
-            .cert-link { width: 100%; text-align: center; }
         }
     </style>
 </head>
@@ -209,44 +159,78 @@
         
         <header>
             <div class="profile-area">
-                <img src="WhatsApp Image 2026-06-27 at 14.13.33.jpeg" alt="Fərid Hüseynli" class="profile-img">
+                <img src="profil.jpg" alt="Fərid Hüseynli" class="profile-img">
                 <div class="header-text">
                     <h1>Fərid Hüseynli</h1>
                     <div class="subtitle">İT və Kibertəhlükəsizlik Mütəxəssisi</div>
                 </div>
             </div>
             <div class="contact-info">
+                <p><strong>Ünvan:</strong> Bakı şəh., Binəqədi ray.</p>
                 <p><strong>Telefon:</strong> <a href="tel:+994103739673">+994 (10) 373-96-73</a></p>
                 <p><strong>E-poçt:</strong> <a href="mailto:fhuseynli865@gmail.com">fhuseynli865@gmail.com</a></p>
-                <p><strong>Ünvan:</strong> Bakı şəh., Binəqədi ray.</p>
             </div>
         </header>
 
         <section>
             <h2>Xülasə</h2>
-            <p>Şəbəkə inzibatçılığı, sistem idarəetməsi və kibertəhlükəsizlik (Göy Komanda / Defensive Operations) sahəsində dərin biliklərə malik iddialı İT mütəxəssisiyəm. Active Directory mühitlərinin təhlükəsizlik auditi, Linux sistemlərinin CLI idarəetməsi və Cisco infrastrukturlarının qurulması üzrə praktiki laboratoriya layihələri icra etmişəm.</p>
+            <p>Şəbəkə inzibatçılığı, sistem idarəetməsi və kibertəhlükəsizlik (Göy Komanda / Defensive Operations) sahəsində dərin biliklərə malik iddialı İT mütəxəssisiyəm. Active Directory mühitlərinin təhlükəsizlik auditi, Linux sistemlərinin CLI idarəetməsi və Cisco infrastrukturlarının qurulması üzrə praktiki laboratoriya layihələri icra etmişəm. Texniki problemlərin sürətli həlli (troubleshooting) və infrastruktur təhlükəsizliyinin təmin edilməsi istiqamətində peşəkar fəaliyyətimi davam etdirməkdəyəm.</p>
         </section>
 
         <section>
-            <h2>Praktiki Layihələr və Təcrübə</h2>
+            <h2>İş Təcrübəsi (Praktiki Layihələr)</h2>
             <div class="item">
                 <div class="item-header">
-                    <span><span class="company">Aktiv Direktoriyanın Təhlükəsizlik Auditi</span> — Diplom Layihəsi</span>
+                    <span><span class="company">Aktiv Direktoriyanın Təhlükəsizlik Auditi və Sərtləşdirilməsi</span> — Diplom Layihəsi</span>
                     <span class="date">2026 - Hazırda</span>
                 </div>
                 <ul>
-                    <li>Yerli domen mühitində <strong>PingCastle</strong> vasitəsilə təhlükəsizlik auditinin aparılması.</li>
-                    <li>LLMNR/NBT-NS və Kerberos protokolu risklərinin azaldılması və sazlanması.</li>
+                    <li>Yerli domen mühitində <strong>PingCastle</strong> proqramı ilə təhlükəsizlik auditinin aparılması.</li>
+                    <li>LLMNR/NBT-NS zəhərlənməsi (Poisoning) və Kerberos protokolu risklərinin azaldılması və sazlanması.</li>
                 </ul>
             </div>
+
             <div class="item">
                 <div class="item-header">
-                    <span><span class="company">Linux Sistem İnzibatçılığı</span> — Laboratoriya</span>
+                    <span><span class="company">Şəbəkə Laboratoriya Layihələri</span> — Cisco CCNA</span>
+                    <span class="date">2026 - Hazırda</span>
+                </div>
+                <ul>
+                    <li><strong>Cisco Packet Tracer</strong> proqramında virtual şəbəkə topologiyalarının qurulması və routing/switching konfiqurasiyaları.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span><span class="company">Linux Sistem İnzibatçılığı üzrə Laboratoriya Layihələri</span></span>
                     <span class="date">2025 - Hazırda</span>
                 </div>
                 <ul>
-                    <li>Red Hat Enterprise Linux (RHEL) terminal (CLI) vasitəsilə idarə olunması və fayl icazələrinin tənzimlənməsi.</li>
+                    <li><strong>Red Hat Enterprise Linux (RHEL)</strong> və Ubuntu sistemlərinin terminal (CLI) vasitəsilə idarə olunması, əsas sazlama işlərinin aparılması.</li>
+                    <li>İstifadəçi hesablarının idarə edilməsi (User/Group management), icazələrin (File permissions, CHMOD/CHOWN) təhlükəsizlik standartlarına uyğun tənzimlənməsi.</li>
                 </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Təhsil</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span><span class="company">Netacademy</span> — Şəbəkə və Sistem İnzibatçılığı</span>
+                    <span class="date">2025 - 2026</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span><span class="company">Codeacademy</span> — Kibertəhlükəsizlik</span>
+                    <span class="date">2025 - 2026</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-header">
+                    <span><span class="company">ADMİU</span> — Bakalavr (Teatrşünaslıq)</span>
+                    <span class="date">2020 - 2024</span>
+                </div>
             </div>
         </section>
 
@@ -254,46 +238,44 @@
             <h2>Sertifikatlar</h2>
             <ul class="cert-list">
                 <li>
-                    <span class="cert-name">✔️ Red Hat System Administration I (RH124)</span>
-                    <a href="CourseAttendance20251207-31-ngg84d.pdf" target="_blank" class="cert-link">Sertifikata Bax</a>
+                    <span>Red Hat System Administration I (RH124)</span>
+                    <a href="rh124.pdf" target="_blank" class="cert-link">Sertifikata Bax</a>
                 </li>
                 <li>
-                    <span class="cert-name">✔️ Red Hat System Administration II (RH134)</span>
-                    <a href="CourseAttendance20251209-32-rnn756.pdf" target="_blank" class="cert-link">Sertifikata Bax</a>
+                    <span>Red Hat System Administration II (RH134)</span>
+                    <a href="rh134.pdf" target="_blank" class="cert-link">Sertifikata Bax</a>
                 </li>
                 <li>
-                    <span class="cert-name">✔️ Netacademy - Networking Basics</span>
-                    <a href="NetworkingBasicsUpdate20260521-32-abebh4.pdf" target="_blank" class="cert-link">Sertifikata Bax</a>
+                    <span>Netacademy - Networking Basics</span>
+                    <a href="basics.pdf" target="_blank" class="cert-link">Sertifikata Bax</a>
                 </li>
                 <li>
-                    <span class="cert-name">✔️ Netacademy - Network Addressing & Troubleshooting</span>
-                    <a href="NetworkAddressingandBasicTroubleshootingUpdate20260521-32-gbu1nk.pdf" target="_blank" class="cert-link">Sertifikata Bax</a>
+                    <span>Netacademy - Network Addressing and Basic Troubleshooting</span>
+                    <a href="addressing.pdf" target="_blank" class="cert-link">Sertifikata Bax</a>
                 </li>
                 <li>
-                    <span class="cert-name">✔️ Netacademy - Networking Devices & Configuration</span>
-                    <a href="NetworkingDevicesandBasicConfigUpdate20260627-31-x56ex7.pdf" target="_blank" class="cert-link">Sertifikata Bax</a>
+                    <span>Netacademy - Networking Devices and Initial Configuration</span>
+                    <a href="devices.pdf" target="_blank" class="cert-link">Sertifikata Bax</a>
                 </li>
             </ul>
         </section>
 
         <section>
-            <h2>Texniki Bacarıqlar</h2>
+            <h2>Bacarıqlar və Dillər</h2>
             <div class="skills-grid">
                 <div class="skills-box">
-                    <h3>Şəbəkə və Sistem</h3>
-                    <ul>
-                        <li>Cisco CCNA / Packet Tracer</li>
-                        <li>Windows & Linux İnzibatçılığı</li>
-                        <li>Active Directory İdarəetməsi</li>
-                    </ul>
+                    <h3>Texniki Bacarıqlar</h3>
+                    <p>• Şəbəkə İnzibatçılığı (Cisco CCNA)</p>
+                    <p>• Active Directory və Təhlükəsizlik</p>
+                    <p>• Sistem İnzibatçılığı (Windows/Linux)</p>
+                    <p>• Şəbəkə Simulyasiyası (Packet Tracer)</p>
+                    <p>• Problemlərin Aradan Qaldırılması (Troubleshooting)</p>
                 </div>
                 <div class="skills-box">
-                    <h3>Kibertəhlükəsizlik</h3>
-                    <ul>
-                        <li>PingCastle Təhlükəsizlik Auditi</li>
-                        <li>Göy Komanda (Defensive Ops)</li>
-                        <li>Troubleshooting</li>
-                    </ul>
+                    <h3>Dil Bilikləri</h3>
+                    <p>• <strong>Azərbaycan dili:</strong> Ana dili</p>
+                    <p>• <strong>İngilis dili:</strong> B1</p>
+                    <p>• <strong>Rus dili:</strong> A1</p>
                 </div>
             </div>
         </section>
