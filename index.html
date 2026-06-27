@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fərid Hüseynli | Şəxsi CV və Portfolio</title>
+    <title>Fərid Hüseynli | İT və Kibertəhlükəsizlik Mütəxəssisi</title>
     <style>
         * {
             margin: 0;
@@ -18,7 +18,7 @@
             padding: 40px 20px;
         }
         .container {
-            max-width: 850px;
+            max-width: 900px;
             margin: 0 auto;
             background: #ffffff;
             padding: 40px;
@@ -31,30 +31,31 @@
             margin-bottom: 30px;
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
+            align-items: center;
             flex-wrap: wrap;
         }
         .header-text h1 {
-            font-size: 2.2rem;
+            font-size: 2.4rem;
             color: #2c3e50;
             text-transform: uppercase;
             margin-bottom: 5px;
+            letter-spacing: 1px;
         }
         .header-text .subtitle {
-            font-size: 1.2rem;
-            color: #16a085;
+            font-size: 1.3rem;
+            color: #2980b9;
             font-weight: 600;
         }
         .contact-info {
             text-align: right;
             font-size: 0.95rem;
-            color: #666;
+            color: #555;
         }
         .contact-info p {
             margin-bottom: 5px;
         }
         .contact-info a {
-            color: #16a085;
+            color: #2980b9;
             text-decoration: none;
         }
         section {
@@ -64,27 +65,28 @@
             font-size: 1.3rem;
             color: #2c3e50;
             text-transform: uppercase;
-            border-left: 4px solid #16a085;
+            border-left: 4px solid #2980b9;
             padding-left: 12px;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             letter-spacing: 0.5px;
         }
         .item {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
         .item-header {
             display: flex;
             justify-content: space-between;
             font-weight: bold;
-            color: #333;
-            margin-bottom: 5px;
+            color: #2c3e50;
+            margin-bottom: 8px;
             flex-wrap: wrap;
+            font-size: 1.1rem;
         }
         .company {
-            color: #16a085;
+            color: #2980b9;
         }
         .date {
-            color: #888;
+            color: #7f8c8d;
             font-weight: normal;
             font-size: 0.9rem;
         }
@@ -93,28 +95,38 @@
             color: #555;
         }
         ul li {
-            margin-bottom: 5px;
+            margin-bottom: 6px;
             text-align: justify;
         }
-        .skills-container {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
-        }
-        .skills-box {
-            flex: 1;
-            min-width: 250px;
         }
         .skills-box h3 {
             font-size: 1rem;
-            color: #7f8c8d;
+            color: #34495e;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #eef2f5;
+            padding-bottom: 5px;
+        }
+        .skills-box p, .skills-box li {
+            font-size: 0.95rem;
+            color: #666;
+            list-style-type: none;
+            margin-bottom: 5px;
+        }
+        .cert-list li {
             margin-bottom: 8px;
+            border-left: 2px solid #bdc3c7;
+            padding-left: 8px;
+            list-style-type: none;
+            font-size: 0.95rem;
         }
         @media (max-width: 768px) {
             body { padding: 10px; }
             .container { padding: 20px; }
-            header { flex-direction: column; gap: 15px; }
+            header { flex-direction: column; align-items: flex-start; gap: 15px; }
             .contact-info { text-align: left; }
             .item-header { flex-direction: column; }
         }
@@ -127,44 +139,116 @@
         <header>
             <div class="header-text">
                 <h1>Fərid Hüseynli</h1>
-                <div class="subtitle">Mütəxəssis / Sizin Vəzifəniz</div>
+                <div class="subtitle">İT və Kibertəhlükəsizlik Mütəxəssisi</div>
             </div>
             <div class="contact-info">
-                <p><strong>Telefon:</strong> +994 (50) 000-00-00</p>
-                <p><strong>E-poçt:</strong> feridhuseynli865@gmail.com</p>
-                <p><strong>Ünvan:</strong> Bakı, Azərbaycan</p>
+                <p><strong>Telefon:</strong> +994 (10) 373-96-73</p>
+                <p><strong>E-poçt:</strong> <a href="mailto:fhuseynli865@gmail.com">fhuseynli865@gmail.com</a></p>
+                <p><strong>Ünvan:</strong> Bakı şəh., Binəqədi ray.</p>
             </div>
         </header>
 
         <section>
             <h2>Xülasə</h2>
-            <p>Bura özünüz haqqında qısa peşəkar məlumat yaza bilərsiniz. Sayt aktivləşəndən sonra bu mətnləri istədiyiniz vaxt çox rahat dəyişəcəyik.</p>
+            <p>Şəbəkə inzibatçılığı, sistem idarəetməsi və kibertəhlükəsizlik (Göy Komanda / Defensive Operations) sahəsində dərin biliklərə malik iddialı İT mütəxəssisiyəm. Active Directory mühitlərinin təhlükəsizlik auditi, Linux sistemlərinin CLI idarəetməsi və Cisco infrastrukturlarının qurulması üzrə praktiki laboratoriya layihələri icra etmişəm. Texniki problemlərin sürətli həlli (troubleshooting) və infrastruktur təhlükəsizliyinin təmin edilməsi istiqamətində peşəkar fəaliyyətimi davam etdirməkdəyəm.</p>
         </section>
 
         <section>
-            <h2>İş Təcrübəsi</h2>
+            <h2>Praktiki Layihələr və Təcrübə</h2>
+            
             <div class="item">
                 <div class="item-header">
-                    <span><span class="company">Şirkətin Adı</span> — Vəzifəniz</span>
-                    <span class="date">Tarix – Hazırda</span>
+                    <span><span class="company">Aktiv Direktoriyanın Təhlükəsizlik Auditi və Sərtləşdirilməsi</span> — Diplom Layihəsi</span>
+                    <span class="date">2025 - 2026</span>
                 </div>
                 <ul>
-                    <li>Gördüyünüz əsas işlər və əldə etdiyiniz uğurlar.</li>
-                    <li>Digər önəmli nailiyyətiniz.</li>
+                    <li>Yerli domen mühitində <strong>PingCastle</strong> proqram təminatı vasitəsilə infrastrukturun təhlükəsizlik auditinin aparılması və boşluqların təyini.</li>
+                    <li>LLMNR/NBT-NS zəhərlənməsi (Poisoning) və Kerberos protokolu risklərinin azaldılması, təhlükəsizlik sazlamalarının konfiqurasiya edilməsi.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span><span class="company">Linux Sistem İnzibatçılığı</span> — Laboratoriya Layihələri</span>
+                    <span class="date">2025 - 2026</span>
+                </div>
+                <ul>
+                    <li><strong>Red Hat Enterprise Linux (RHEL)</strong> və Ubuntu sistemlərinin terminal (CLI) interfeysi vasitəsilə mükəmməl şəkildə idarə olunması.</li>
+                    <li>İstifadəçi hesablarının və qruplarının idarə edilməsi (User/Group management), fayl icazələrinin (Permissions, CHMOD, CHOWN) təhlükəsizlik standartlarına uyğun tənzimlənməsi.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span><span class="company">Şəbəkə Laboratoriya Layihələri</span> — Cisco CCNA</span>
+                    <span class="date">2025 - 2026</span>
+                </div>
+                <ul>
+                    <li><strong>Cisco Packet Tracer</strong> mühitində mürəkkəb virtual şəbəkə topologiyalarının sıfırdan dizayn edilməsi və qurulması.</li>
+                    <li>Şəbəkə avadanlıqlarında ilkin konfiqurasiya işləri, IP ünvanların paylanması, Routing və Switching sazlamalarının həyata keçirilməsi.</li>
                 </ul>
             </div>
         </section>
 
         <section>
-            <h2>Bacarıqlar</h2>
-            <div class="skills-container">
+            <h2>Təhsil və Kurslar</h2>
+            
+            <div class="item">
+                <div class="item-header">
+                    <span><span class="company">Codeacademy</span> — Kibertəhlükəsizlik Proqramı</span>
+                    <span class="date">09.2025 - 03.2026</span>
+                </div>
+                <p style="color: #666; font-size: 0.95rem; margin-left: 5px;">Göy Komanda / Defensive Operations, Active Directory Təhlükəsizliyi və Audit üzrə ixtisaslaşmış təhsil.</p>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span><span class="company">Netacademy</span> — Şəbəkə Mühəndisliyi və Sistem İnzibatçılığı</span>
+                    <span class="date">2025 - 2026</span>
+                </div>
+                <p style="color: #666; font-size: 0.95rem; margin-left: 5px;">Cisco networking və Red Hat Linux idarəetməsi üzrə genişləndirilmiş tədris proqramı.</p>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span><span class="company">ADMİU</span> — Bakalavr</span>
+                    <span class="date">2020 - 2024</span>
+                </div>
+                <p style="color: #666; font-size: 0.95rem; margin-left: 5px;">Teatrşünaslıq ixtisası üzrə ali təhsil.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Sertifikatlar</h2>
+            <ul class="cert-list">
+                <li>✔️ Red Hat System Administration I (RH124 - RHA) - Ver. 9.3</li>
+                <li>✔️ Red Hat System Administration II (RH134 - RHA) - Ver. 9.3</li>
+                <li>✔️ Netacademy - Networking Basics</li>
+                <li>✔️ Netacademy - Network Addressing and Basic Troubleshooting</li>
+                <li>✔️ Netacademy - Networking Devices and Initial Configuration</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Texniki və Şəxsi Bacarıqlar</h2>
+            <div class="skills-grid">
                 <div class="skills-box">
-                    <h3>Texniki Bacarıqlar</h3>
-                    <p>İxtisasınıza uyğun proqramlar və alətlər</p>
+                    <h3>Şəbəkə və Sistem</h3>
+                    <p>• Cisco CCNA / Packet Tracer</p>
+                    <p>• Windows & Linux İnzibatçılığı</p>
+                    <p>• Active Directory İdarəetməsi</p>
                 </div>
                 <div class="skills-box">
-                    <h3>Şəxsi Bacarıqlar</h3>
-                    <p>Komanda işi, Problemlərin həlli, Kommunikasiya</p>
+                    <h3>Kibertəhlükəsizlik</h3>
+                    <p>• PingCastle ilə Təhlükəsizlik Auditi</p>
+                    <p>• LLMNR/NBT-NS & Kerberos Sazlamaları</p>
+                    <p>• Problemlərin Həlli (Troubleshooting)</p>
+                </div>
+                <div class="skills-box">
+                    <h3>Dil Bilikləri</h3>
+                    <p>• Azərbaycan dili (Ana dili)</p>
+                    <p>• İngilis dili (B1)</p>
+                    <p>• Rus dili (A1)</p>
                 </div>
             </div>
         </section>
