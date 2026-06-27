@@ -35,24 +35,13 @@
             flex-wrap: wrap;
             gap: 20px;
         }
-        .profile-area {
-            display: flex;
-            align-items: center;
-            gap: 25px;
-        }
-        .profile-img {
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #3498db;
-        }
         .header-text h1 {
             font-size: 2.6rem;
             color: #2c3e50;
             text-transform: uppercase;
             margin-bottom: 5px;
             font-weight: 800;
+            letter-spacing: 1px;
         }
         .header-text .subtitle {
             font-size: 1.3rem;
@@ -123,33 +112,28 @@
             grid-template-columns: 1fr;
             gap: 12px;
             list-style: none;
+            padding-left: 0;
         }
         .cert-list li {
             background: #f8fafc;
             padding: 14px 20px;
             border-radius: 8px;
             border: 1px solid #e2e8f0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .cert-link {
-            background-color: #3498db;
-            color: white;
-            text-decoration: none;
-            padding: 6px 14px;
-            border-radius: 4px;
-            font-size: 0.85rem;
+            font-size: 1.05rem;
+            color: #2c3e50;
             font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
-        .cert-link:hover { background-color: #2980b9; }
+        .cert-icon {
+            color: #3498db;
+        }
 
         @media (max-width: 768px) {
             header { flex-direction: column; align-items: flex-start; }
-            .profile-area { flex-direction: column; align-items: flex-start; }
             .contact-info { text-align: left; }
             .item-header { flex-direction: column; }
-            .cert-list li { flex-direction: column; align-items: flex-start; gap: 10px; }
         }
     </style>
 </head>
@@ -158,12 +142,9 @@
     <div class="container">
         
         <header>
-            <div class="profile-area">
-                <img src="profil.jpg" alt="Fərid Hüseynli" class="profile-img">
-                <div class="header-text">
-                    <h1>Fərid Hüseynli</h1>
-                    <div class="subtitle">İT və Kibertəhlükəsizlik Mütəxəssisi</div>
-                </div>
+            <div class="header-text">
+                <h1>Fərid Hüseynli</h1>
+                <div class="subtitle">İT mütəxəssisi</div>
             </div>
             <div class="contact-info">
                 <p><strong>Ünvan:</strong> Bakı şəh., Binəqədi ray.</p>
@@ -181,7 +162,7 @@
             <h2>İş Təcrübəsi (Praktiki Layihələr)</h2>
             <div class="item">
                 <div class="item-header">
-                    <span><span class="company">Aktiv Direktoriyanın Təhlükəsizlik Auditi və Sərtləşdirilməsi</span> — Diplom Layihəsi</span>
+                    <span><span class="company">Aktiv Direktoriyanın Təhlükəsizlik Auditi və Sərtləşdirilməsi</span> — (Diplom Layihəsi)</span>
                     <span class="date">2026 - Hazırda</span>
                 </div>
                 <ul>
@@ -192,7 +173,7 @@
 
             <div class="item">
                 <div class="item-header">
-                    <span><span class="company">Şəbəkə Laboratoriya Layihələri</span> — Cisco CCNA</span>
+                    <span><span class="company">Şəbəkə Laboratoriya Layihələri</span> — (Cisco CCNA)</span>
                     <span class="date">2026 - Hazırda</span>
                 </div>
                 <ul>
@@ -228,7 +209,7 @@
             </div>
             <div class="item">
                 <div class="item-header">
-                    <span><span class="company">ADMİU</span> — Bakalavr (Teatrşünaslıq)</span>
+                    <span><span class="company">ADMİU</span> — Bakalavr</span>
                     <span class="date">2020 - 2024</span>
                 </div>
             </div>
@@ -237,26 +218,11 @@
         <section>
             <h2>Sertifikatlar</h2>
             <ul class="cert-list">
-                <li>
-                    <span>Red Hat System Administration I (RH124)</span>
-                    <a href="rh124.pdf" target="_blank" class="cert-link">Sertifikata Bax</a>
-                </li>
-                <li>
-                    <span>Red Hat System Administration II (RH134)</span>
-                    <a href="rh134.pdf" target="_blank" class="cert-link">Sertifikata Bax</a>
-                </li>
-                <li>
-                    <span>Netacademy - Networking Basics</span>
-                    <a href="basics.pdf" target="_blank" class="cert-link">Sertifikata Bax</a>
-                </li>
-                <li>
-                    <span>Netacademy - Network Addressing and Basic Troubleshooting</span>
-                    <a href="addressing.pdf" target="_blank" class="cert-link">Sertifikata Bax</a>
-                </li>
-                <li>
-                    <span>Netacademy - Networking Devices and Initial Configuration</span>
-                    <a href="devices.pdf" target="_blank" class="cert-link">Sertifikata Bax</a>
-                </li>
+                <li><span class="cert-icon">✓</span> Red Hat System Administration I (RH124 - RHA) - Ver. 9.3</li>
+                <li><span class="cert-icon">✓</span> Red Hat System Administration II (RH134 - RHA) - Ver. 9.3</li>
+                <li><span class="cert-icon">✓</span> Netacademy - Networking Basics</li>
+                <li><span class="cert-icon">✓</span> Netacademy - Network Addressing and Basic Troubleshooting</li>
+                <li><span class="cert-icon">✓</span> Netacademy - Networking Devices and Initial Configuration</li>
             </ul>
         </section>
 
